@@ -21,38 +21,47 @@ const NadhaswaramKey: React.FC<NadhaswaramKeyProps> = ({
   const audioRef = React.useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    audioRef.current = new Audio(audioSrc);
-    
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key.toLowerCase() === keyboardKey.toLowerCase() && !e.repeat) {
-        playSound();
-      }
-    };
-    
-    const handleKeyUp = (e: KeyboardEvent) => {
-      if (e.key.toLowerCase() === keyboardKey.toLowerCase()) {
-        setIsActive(false);
-      }
-    };
+    // Initialize audio with error handling
+    try {
+      audioRef.current = new Audio(audioSrc);
+      
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key.toLowerCase() === keyboardKey.toLowerCase() && !e.repeat) {
+          playSound();
+        }
+      };
+      
+      const handleKeyUp = (e: KeyboardEvent) => {
+        if (e.key.toLowerCase() === keyboardKey.toLowerCase()) {
+          setIsActive(false);
+        }
+      };
 
-    window.addEventListener('keydown', handleKeyDown);
-    window.addEventListener('keyup', handleKeyUp);
-    
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-      window.removeEventListener('keyup', handleKeyUp);
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current = null;
-      }
-    };
+      window.addEventListener('keydown', handleKeyDown);
+      window.addEventListener('keyup', handleKeyUp);
+      
+      return () => {
+        window.removeEventListener('keydown', handleKeyDown);
+        window.removeEventListener('keyup', handleKeyUp);
+        if (audioRef.current) {
+          audioRef.current.pause();
+          audioRef.current = null;
+        }
+      };
+    } catch (error) {
+      console.error("Audio initialization error:", error);
+    }
   }, [keyboardKey, audioSrc, onNotePlay, note]);
 
   const playSound = () => {
     if (audioRef.current) {
       // Reset the audio to the beginning for quick successive plays
       audioRef.current.currentTime = 0;
-      audioRef.current.play().catch(e => console.error("Error playing audio:", e));
+      audioRef.current.play().catch(error => {
+        console.error("Sound playback error:", error);
+        // Optionally, show a user-friendly toast or notification
+      });
+      
       setIsActive(true);
       
       if (onNotePlay) {
