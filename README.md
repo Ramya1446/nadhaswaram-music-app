@@ -1,73 +1,62 @@
-# Welcome to your Lovable project
 
-## Project info
+# Nadhaswaram Melody Maker
 
-**URL**: https://lovable.dev/projects/e8ab0af9-a19e-485e-ba7f-7528d7deb032
+An interactive web application that allows users to play and record melodies using the Nadhaswaram, a traditional South Indian wind instrument.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Virtual Nadhaswaram keyboard with authentic sounds
+- Play notes using computer keyboard or by clicking/tapping
+- Interactive animation that responds to played notes
+- Record, save, and play back your melodies
+- Reference chart showing keyboard mappings to Nadhaswaram notes
 
-**Use Lovable**
+## Sound Files
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e8ab0af9-a19e-485e-ba7f-7528d7deb032) and start prompting.
+This application requires Nadhaswaram sound files. You'll need to add sound files for each note to the `/public/sounds/` directory:
 
-Changes made via Lovable will be committed automatically to this repo.
+- `/public/sounds/sa.mp3` - Shadja (Sa)
+- `/public/sounds/ri.mp3` - Rishabha (Ri)
+- `/public/sounds/ga.mp3` - Gandhara (Ga)
+- `/public/sounds/ma.mp3` - Madhyama (Ma)
+- `/public/sounds/pa.mp3` - Panchama (Pa)
+- `/public/sounds/dha.mp3` - Dhaivata (Dha)
+- `/public/sounds/ni.mp3` - Nishada (Ni)
+- `/public/sounds/sa_high.mp3` - Higher Shadja (SA)
 
-**Use your preferred IDE**
+You can record these sounds using a real Nadhaswaram or find royalty-free samples online.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- React
+- TypeScript
+- Tailwind CSS
+- HTML5 Audio API
+- Local Storage for saving recordings
 
-Follow these steps:
+## How to Play
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Press the corresponding keyboard keys (A, S, D, F, J, K, L, ;) to play different notes
+2. Or click/tap directly on the virtual keys
+3. Use the Record button to start recording a melody
+4. Stop recording when finished
+5. Give your recording a name and save it
+6. Play back your recordings or delete them as needed
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Development
 
-# Step 3: Install the necessary dependencies.
-npm i
+This project was created with Lovable.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e8ab0af9-a19e-485e-ba7f-7528d7deb032) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+10. Let's create a directory for sounds:
+<lov-write file_path="public/sounds/placeholder.txt">
+Place the sound files for each Nadhaswaram note here:
+- sa.mp3
+- ri.mp3
+- ga.mp3
+- ma.mp3
+- pa.mp3
+- dha.mp3
+- ni.mp3
+- sa_high.mp3

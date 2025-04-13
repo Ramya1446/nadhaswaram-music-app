@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                nadhaswaram: {
+                    primary: '#8D5524', 
+                    secondary: '#D4AF37',
+                    accent: '#9B2335',
+                    orange: '#E55812',
+                    green: '#046307',
+                    dark: '#121212',
+                    light: '#F5F0E6'
+                }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +94,26 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'note-play': {
+                    '0%': { transform: 'scale(1)', opacity: '1' },
+                    '50%': { transform: 'scale(1.2)', opacity: '0.8' },
+                    '100%': { transform: 'scale(1)', opacity: '1' }
+                },
+                'float': {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-10px)' }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'note-play': 'note-play 0.5s ease-out',
+                'float': 'float 3s ease-in-out infinite'
+			},
+            fontFamily: {
+                'kerala': ['Chilanka', 'cursive']
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
