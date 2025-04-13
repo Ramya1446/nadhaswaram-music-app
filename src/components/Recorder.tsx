@@ -2,8 +2,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Record, StopCircle, Save, Trash, Play } from 'lucide-react';
-import { toast } from '@/components/ui/sonner';
+import { Mic, StopCircle, Save, Trash, Play } from 'lucide-react';
+import { toast } from 'sonner';
 
 interface RecorderProps {
   playedNotes: string[];
@@ -125,7 +125,7 @@ const Recorder: React.FC<RecorderProps> = ({ playedNotes }) => {
             onClick={startRecording} 
             className="bg-nadhaswaram-accent hover:bg-nadhaswaram-primary"
           >
-            <Record className="mr-2 h-4 w-4" /> Start Recording
+            <Mic className="mr-2 h-4 w-4" /> Start Recording
           </Button>
         ) : (
           <Button 
