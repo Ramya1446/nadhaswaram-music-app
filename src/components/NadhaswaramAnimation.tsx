@@ -25,7 +25,6 @@ const NadhaswaramAnimation: React.FC<NadhaswaramAnimationProps> = ({ activeNote 
       <div className={`
         transform transition-all duration-500 ease-in-out
         ${isAnimating ? 'scale-110' : 'scale-100'}
-        animate-float
       `}>
         {/* Simplified Nadhaswaram visualization */}
         <div className="relative">
@@ -54,27 +53,24 @@ const NadhaswaramAnimation: React.FC<NadhaswaramAnimationProps> = ({ activeNote 
           {isAnimating && (
             <div className="absolute top-0 w-full h-full">
               <Music2 
-                className="absolute text-nadhaswaram-secondary animate-bounce" 
+                className="absolute text-nadhaswaram-secondary" 
                 style={{ 
                   top: '0%', 
-                  right: '10%',
-                  animation: 'float 1.5s ease-in-out infinite'
+                  right: '10%'
                 }}
               />
               <Music4 
-                className="absolute text-nadhaswaram-accent animate-bounce" 
+                className="absolute text-nadhaswaram-accent" 
                 style={{ 
                   top: '-20%', 
-                  right: '30%',
-                  animation: 'float 2s ease-in-out infinite'
+                  right: '30%'
                 }}
               />
               <Music2 
-                className="absolute text-nadhaswaram-green animate-bounce" 
+                className="absolute text-nadhaswaram-green" 
                 style={{ 
                   top: '-10%', 
-                  right: '50%',
-                  animation: 'float 2.5s ease-in-out infinite'
+                  right: '50%'
                 }}
               />
             </div>
@@ -95,3 +91,4 @@ const NadhaswaramAnimation: React.FC<NadhaswaramAnimationProps> = ({ activeNote 
 };
 
 export default NadhaswaramAnimation;
+
