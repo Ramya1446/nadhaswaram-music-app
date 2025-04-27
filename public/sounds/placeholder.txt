@@ -1,4 +1,4 @@
-adhaswaram Sound Files:
+Nadhaswaram Sound Files:
 - sa.mp3     (Shadja/Sa)
 - ri.mp3     (Rishabha/Ri)
 - ga.mp3     (Gandhara/Ga)
