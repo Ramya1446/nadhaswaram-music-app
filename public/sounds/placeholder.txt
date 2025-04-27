@@ -1,0 +1,11 @@
+adhaswaram Sound Files:
+- sa.mp3     (Shadja/Sa)
+- ri.mp3     (Rishabha/Ri)
+- ga.mp3     (Gandhara/Ga)
+- ma.mp3     (Madhyama/Ma)
+- pa.mp3     (Panchama/Pa)
+- dha.mp3    (Dhaivata/Dha)
+- ni.mp3     (Nishada/Ni)
+- sa_high.mp3 (Higher Shadja/SA)
+
+IMPORTANT: Replace these placeholder messages with actual MP3 sound files of a Nadhaswaram instrument.
