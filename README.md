@@ -47,6 +47,5 @@ This application has Nadhaswaram sound files.
 
 This project was created by Ramya Nakshathra.
 
-```
 
 
