@@ -1,3 +1,30 @@
+# 🎶 Nadhaswaram Melody Maker
+
+**Nadhaswaram Melody Maker** is a web-based music app that brings the sound of the traditional Indian instrument **Nadhaswaram** to your keyboard. Users can play, record, and replay melodies right from their browser!
+
+---
+
+## ✨ Features
+
+- 🎹 Interactive musical keyboard (press `A S D F J K L ;`)
+- 🔊 Authentic Nadhaswaram audio notes (`.mp3` format)
+- 📝 Melody recording and playback
+- 💾 Save and store your tunes locally
+- 🎨 Animated visual key feedback
+- 📱 Fully responsive design
+- ⚡ Fast performance with React + Vite
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React (with Vite), Tailwind CSS, TypeScript  
+- **Audio:** HTML5 Audio API  
+- **Tools:** Node.js, npm  
+
+---
+
+
 ## Sound Files
 
 This application requires Nadhaswaram sound files. Add them to the `/public/sounds/` directory:
@@ -12,6 +39,8 @@ This application requires Nadhaswaram sound files. Add them to the `/public/soun
 - `/public/sounds/sa_high.mp3` - Higher Shadja (SA)
 
 🎵 You can record these using a real Nadhaswaram or find royalty-free samples online.
+
+## Screenshot
 
 ## Development
 
