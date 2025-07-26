@@ -41,6 +41,8 @@ This application requires Nadhaswaram sound files. Add them to the `/public/soun
 🎵 You can record these using a real Nadhaswaram or find royalty-free samples online.
 
 ## Screenshot
+<img width="1731" height="872" alt="image" src="https://github.com/user-attachments/assets/54fe0c06-c0f6-4dc2-b57d-b3d8187dcb8c" />
+<img width="1754" height="821" alt="image" src="https://github.com/user-attachments/assets/8e752729-31bf-4907-b734-6f74e5051fe1" />
 
 ## Development
 
